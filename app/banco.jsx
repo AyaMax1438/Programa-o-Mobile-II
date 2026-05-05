@@ -13,6 +13,7 @@ export default function Banco() {
         db.execSync("CREATE TABLE IF NOT EXISTS dados (id INTEGER PRIMARY KEY AUTOINCREMENT, valor TEXT)");
     }, []);
 
+
     function atualizarDados() {
         setDados([...dados, valor]);
         setValor("");
